@@ -1,7 +1,7 @@
 import React,{useState} from "react";
-import photo from "./images/OIP.jpeg";
+//import photo from "./images/OIP.jpeg";
 import Details from "./Details";
-export default function CommonCard({status,score,name,lang,premiered,rating,duration,summary}) 
+export default function CommonCard({show_image,status,score,name,lang,premiered,rating,duration,summary}) 
 {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -39,7 +39,7 @@ export default function CommonCard({status,score,name,lang,premiered,rating,dura
     >
       <div><br/>
           <img
-            src={photo}
+            src={show_image}
             alt="altpicture"
             style={{ width: "35%", height:"120px",borderColor:"rgba(91, 72, 82, 0.74)"}}
           />
