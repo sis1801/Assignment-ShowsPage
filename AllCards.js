@@ -43,7 +43,9 @@ export default function AllCards() {
               duration={item.show.runtime}
               summary={item.show.summary}
               status={item.show.status}
-              link={<Details/>}
+              show_image={item.show.image} 
+              //here when i am going to the exact image i.e {item.show.image.medium} is says cannot read properties of null even though it is not null
+            
             />
           );
         })}
